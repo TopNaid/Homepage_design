@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
+}
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.banner {
+    background-image: url(images/back3.jpg);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-position-x: 8%;
+}
+#c41 a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    background-color: blue;
+}
+#c40 a{
+    text-decoration: none;
+    color: white;
+}
+
+.container_text {
+    display: flex;
+    justify-content: flex-start; /* Align items to the right */
+    align-items: left; /* Center vertically */
+    height: 50vh; /* Full viewport height */
+    padding: 5.625rem; /* 90px */
+    margin-left: 4.375rem; /* 70px */
+    text-align: left; /* Align text to the right */
+}
+
+.text {
+    max-width: 60%; /* Control the width of the text container */
+    margin-right: 10%; /* Adjust this value to control how close to the middle the text appears */
+}
+
+/* Middle style */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.9375rem; /* 15px */
+    margin: 2.5rem; /* 40px */
+    justify-content: center; /* Center items horizontally */
+}
+
+.gallery img {
+    width: 9.375rem; /* 150px */
+    height: 9.375rem; /* 150px */
+    display: inline-block;
+    margin: 3.125rem; /* 50px */
+    padding: 0.5625rem; /* 9px */
+}
+
+div h2 {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 3rem;
+}
+
+div.five {
+    font-weight: bold;
+}
+
+div.gala {
+    border: 1px solid #ccc;
+    border-radius: 0.3125rem; /* 5px */
+    background-color: rgba(241, 233, 246, 0.785);
+    text-align: center;
+}
+
+div.name {
+    text-align: center;
+    padding: 0.125rem; /* 2px */
+    font-family:'Montserrat', sans-serif;
+}
+
+/* Third middle */
+form .header {
+   margin-bottom: 1rem; 
+   text-align: center;
+   
+}
+.contact form {
+    max-width: 60rem;
+    margin: 0.5rem auto; 
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem;
+    
+ }
+ /* .contact .form-row form{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+ } */
+ .contact form {
+    padding: 1.5rem;
+    width: 90%;
+    background-color: rgb(2, 2, 54);
+    color: white;
+    border-radius: .8rem;
+    
+ }
+ .form-row input{
+    width: 20%;
+ }
+ .contact form textarea{
+    resize: none;
+    margin-top: 1rem;
+
+ }
+ .submit{
+    width: 25%;
+    margin: 1rem auto;
+ }
+/* Footer style */
+.foot {
+    font-family: 'Montserrat', sans-serif;
+    padding: 2.5rem;
+    font-size: 1.1rem;
+}
+
+.list-unstyled a {
+    text-decoration: none;
+    color: inherit; /* Ensures the links have the same color as the parent */
+}
+
+@media (max-width: 768px) {
+    .container_text {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.25rem; 
+        margin-left: 1.25rem; 
+    }
+
+    div h1{
+        font-size: 2.2rem;
+    }
+    div p{
+        font-size: 1.3rem;
+    }
+
+    .text, h1, h3 {
+        max-width: 100%; /* Full width on smaller screens */
+        margin-right: auto;
+        margin-left: auto; 
+        margin-top:2.5rem;
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 0;
+    }
+
+    .gallery {
+        margin: 2.5rem; 
+    }
+
+    .gallery img {
+        width: 6.25rem; 
+        height: 6.25rem; 
+        margin: 1.25rem; 
+    }
+
+    .gala, h5{
+        font-size: 0.1; 
+        
+    }
+
+    .banner {
+        height: 70vh; /* Adjust height for extra small screens */
+        background-position-x: center;
+        margin-top: 0;
+        position: relative;
+    }
+
+    .banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        z-index: 1;
+    }
+
+    .container_text, .text, h1, h3 {
+        position: relative;
+        z-index: 2;
+    }
+    .contact form {
+        padding: 0.9rem;
+        width: 80%;
+        border-radius: .8rem;
+        padding-top: 0; 
+     }
+     form .header{
+        font-size: 1.3rem; 
+         text-align: center;
+         padding: 0.7rem;
+     }
+}
+
+@media (max-width: 576px) {
+    .banner {
+        height: 70vh; /* Adjust height for extra small screens */
+        background-position-x: center;
+        margin-top: 0;
+        position: relative;
+    }
+    .gala,h5{
+        font-size: 0.1; 
+    }
+    form .header{
+        font-size: 1.3rem; 
+         text-align: center;
+         padding: 0.7rem;
+     }
+
+    .banner::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        z-index: 1;
+    }
+
+    .container_text {
+        padding: 0.625rem; /* 10px */
+        margin-left: 0.625rem; /* 10px */
+        position: relative;
+        z-index: 2;
+    }
+    div h1{
+        font-size: 2.2rem;
+    }
+    div p{
+        font-size: 1.3rem;
+    }
+    .text {
+        padding: 0.625rem; /* 10px */
+        text-align: center;
+        margin-top: 1.5rem;
+        position: relative;
+        z-index: 2;
+    }
+
+    .gallery {
+        margin: 1.25rem; /* 20px */
+        font-size: 0.125rem; /* 2px */
+    }
+
+    .gallery img {
+        width: 5rem; /* 80px */
+        height: 5rem; /* 80px */
+        margin: 0.625rem; /* 10px */
+    }
+
+    .foot {
+        padding: 1.5rem;
+        font-size: 0.9rem;
+        margin-left: 1rem;
+    }
+    .fun{
+        font-size: 0.9rem;
+    }
+}
