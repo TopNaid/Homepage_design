@@ -4,11 +4,11 @@
     box-sizing: border-box; /* Ensures padding and borders are included in the element's total width and height */
 }
 body {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', serif;
 }
 
 .banner {
-    background-image: url(images/back3.jpg);
+    background-image: url(images/rsz_back3.jpg);
     width: 100%;
     height: 100vh;
     background-position: center;
@@ -55,8 +55,9 @@ button{
     width: 9.375rem; /* 150px */
     height: 9.375rem; /* 150px */
     display: inline-block;
-    margin: 3.125rem; /* 50px */
+    margin: 3rem; /* 50px */
     padding: 0.5625rem; /* 9px */
+    gap: 2rem;
 }
 
 div h2 {
@@ -234,7 +235,7 @@ form .header {
         left: 0;
         width: 100%;
         height: 100%;
-        background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+        background: rgba(0, 0, 0, 0.637); /* Semi-transparent black overlay */
         z-index: 1;
     }
 
