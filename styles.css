@@ -55,9 +55,8 @@ button{
     width: 9.375rem; /* 150px */
     height: 9.375rem; /* 150px */
     display: inline-block;
-    margin: 3rem; /* 50px */
+    margin: 3.125rem; /* 50px */
     padding: 0.5625rem; /* 9px */
-    gap: 2rem;
 }
 
 div h2 {
