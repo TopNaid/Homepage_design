@@ -104,9 +104,8 @@ form .header {
  .contact form {
     padding: 1.5rem;
     width: 90%;
-    background-color: rgb(2, 2, 54);
-    color: white;
-    border-radius: .8rem;
+    color:black;
+    border-radius: .2rem;
     
  }
  .form-row input{
@@ -120,7 +119,13 @@ form .header {
  .submit{
     width: 25%;
     margin: 1rem auto;
+    
  }
+ #C4{
+    color:black;
+    padding: 1rem;
+ }
+
 /* Footer style */
 .foot {
     font-family: 'Montserrat', sans-serif;
@@ -132,7 +137,33 @@ form .header {
     text-decoration: none;
     color: inherit; /* Ensures the links have the same color as the parent */
 }
+@media (max-width: 1200px) {
+    .banner {
+        height: 70vh; /* Adjust height for extra small screens */
+        background-position-x: center;
+        margin-top: 0;
+        position: relative;
+    }
+    .container_text {
+        padding: 8rem; /* Adjust padding */
+        margin-left: 2rem; /* Adjust left margin */
+    }
 
+    .text {
+        max-width: 70%; /* Adjust text width */
+        margin-right: 5%; /* Adjust right margin */
+    }
+
+    .gallery {
+        margin: 2rem; /* Adjust gallery margin */
+    }
+
+    .gallery img {
+        width: 12rem; /* Adjust image width */
+        height: 12rem; /* Adjust image height */
+        margin: 2rem; /* Adjust image margin */
+    }
+}
 @media (max-width: 768px) {
     .container_text {
         flex-direction: column;
@@ -168,8 +199,9 @@ form .header {
         margin: 1rem; 
     }
 
-    .gala, h5{
-        font-size: 0.1; 
+    .gala{
+        width: 9rem;
+        font-size: 1rem;
         
     }
 
@@ -218,8 +250,10 @@ form .header {
         margin-top: 0;
         position: relative;
     }
-    .gala,h5{
-        font-size: 0.1; 
+    .gala{
+        width: 9rem;
+        font-size: 1rem;
+        
     }
     form .header{
         font-size: 1.3rem; 
